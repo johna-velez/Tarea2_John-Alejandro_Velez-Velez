@@ -53,26 +53,41 @@ class vectorcartesiano:
         
     def __repr__ (self): ##para mirar la representacion
         
-        return '<Vector (%f, %f, %f)>' % (self.x, self.y, self.z'''
+        return '<Vector (%f, %f, %f)>' % (self.x, self.y, self.z)
     
     
 
 
 # In[237]:
 
+class vectorpolar:    
+    def __init__(self, r, theta, phi):
+        if r<0:
+            r=abs(r)
+        if theta<0 or theta>pi:
+            print('hay un error en la coordenada polar, theta')
+        if phi<0 or phi>2*pi:
+            print('hay un error en la coordenada  ')
+        
+        # conversion a cantidades cartesianas
+        r=float(r)
+        x=r*cos(theta)*sin(phi)
+        y=r*sin(theta)*sin(phi)
+        z=r*cos(phi)
+        
+        vectorcartesiano.__init__(self, x,y,z)# todo lo va a calcular en cartesianas 
+        
+        def conv(self):
+            return (self.x,self.y,self.z)
 
-class vectorpolar(vectorcartesiano):
-    """"def __ini__(self, r, theta, phi):
-        self.r=r
-        self.theta=theta
-        self.phi=phi
-        self.modulo=3"""
-    #def conv(self):
         
 
 
 # In[238]:
 
+def ang(a,b):
+    ang=acos(a*b/(a.modulo*b.modulo))
+    return ang
 
 """y=vectorcartesiano(1,2,3)
 yp=vectorpolar(-7,2,0)
@@ -81,13 +96,6 @@ print(y.__dict__)
 print(yp.__dict__)"""
 
 
-# In[190]:
-
-
-1==2
-
-
-# In[ ]:
 
 
 
