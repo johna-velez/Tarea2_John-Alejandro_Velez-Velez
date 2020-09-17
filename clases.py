@@ -50,7 +50,8 @@ class vectorcartesiano:
         else:
             return 'los vectores son diferentes'
         
-    ''''def __repr__ (self): ##para mirar la representacion
+        
+    def __repr__ (self): ##para mirar la representacion
         
         return '<Vector (%f, %f, %f)>' % (self.x, self.y, self.z'''
     
