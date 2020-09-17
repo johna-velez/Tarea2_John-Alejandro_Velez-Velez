@@ -26,7 +26,9 @@ print('axb',a.cruz(b))
 print('axc',a.cruz(c))
 print('bxc',b.cruz(c))
 
-
+print('el angulo entre a y b es:', ang(a,b))
+print('el angulo entre a y c es:', ang(a,c))
+print('el angulo entre b y c es:', ang(b,c))
 # In[ ]:
 
 
