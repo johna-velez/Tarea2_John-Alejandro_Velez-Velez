@@ -29,6 +29,10 @@ print('bxc',b.cruz(c))
 print('el angulo entre a y b es:', ang(a,b))
 print('el angulo entre a y c es:', ang(a,c))
 print('el angulo entre b y c es:', ang(b,c))
+
+print('la represtentacion en cartesiana de a es ', a.conv())
+print('la represtentacion en cartesiana de b es ', b.conv())
+print('la represtentacion en cartesiana de c es ', c.conv())
 # In[ ]:
 
 
