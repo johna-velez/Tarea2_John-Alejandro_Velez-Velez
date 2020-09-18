@@ -77,8 +77,8 @@ class vectorpolar:
         
         vectorcartesiano.__init__(self, x,y,z)# todo lo va a calcular en cartesianas 
         
-        def conv(self):
-            return (self.x,self.y,self.z)
+    def conv(self):
+        return vectorcartesiano(self.x,self.y,self.z)
 
         
 
